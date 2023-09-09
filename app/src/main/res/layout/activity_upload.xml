@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context="com.example.kampus45.UploadActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:background="@drawable/blue_border">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PROFILE "
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/up"
+                android:id="@+id/uploadImage"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/uploadTopic"
+                android:background="@drawable/blue_border"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="Masukkan Nama "
+                android:textStyle="italic"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/uploadDesc"
+                android:background="@drawable/blue_border"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="Masukkan NIM"
+                android:textStyle="italic"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/uploadLang"
+                android:background="@drawable/blue_border"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="Masukkan Program Studi"
+                android:textStyle="italic"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#D53827"
+                android:text="Save"
+                android:textSize="18sp"
+                app:cornerRadius="20dp"
+                android:background="@drawable/llink_border"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>
